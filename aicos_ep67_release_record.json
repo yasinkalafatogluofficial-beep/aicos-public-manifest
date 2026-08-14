@@ -1,0 +1,14 @@
+{
+  "release": "AICOS Public Manifest v0.1.0",
+  "status": "RELEASE_CANDIDATE_NOT_PUBLIC",
+  "canonical_content_sha256": "56424e7d78c81af7a3f521c881bbe8fd0bfb1cd1e956b7d6fcf1925f62e6751b",
+  "artifact_file_sha256": "87d67ab0358f785fb2b0e92cc5f819c6d5e9c7b960c2bd19df1170df05b3c4c9",
+  "canonical_url": null,
+  "remote_verification": "PENDING_PUBLIC_HOSTING",
+  "independent_review": "PENDING_CANONICAL_URL",
+  "epistemic_boundary": [
+    "Integrity does not establish scientific validity.",
+    "Local verification does not establish public availability.",
+    "Public availability does not establish independent verification."
+  ]
+}
