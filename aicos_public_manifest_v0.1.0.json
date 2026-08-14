@@ -1,0 +1,118 @@
+{
+  "claims": [
+    {
+      "evidence_refs": [
+        "EP56-T01",
+        "EP56-T02",
+        "EP56-T03"
+      ],
+      "id": "AICOS-C-001",
+      "limitations": [
+        "Depends on integrity and completeness of dependency lineage.",
+        "Does not establish real-world safety."
+      ],
+      "statement": "Under the defined execution policy, a decision with an unresolved critical ancestor is not eligible for execution.",
+      "status": "SPECIFIED"
+    },
+    {
+      "evidence_refs": [
+        "EP56-T04b",
+        "EP57-T13",
+        "EP57-T14",
+        "EP57-T15"
+      ],
+      "id": "AICOS-C-002",
+      "limitations": [
+        "Semantic causal validity of lineage remains open."
+      ],
+      "statement": "Execution safety requires the implementation lineage to contain the critical ancestors represented by the reference lineage.",
+      "status": "SPECIFIED"
+    }
+  ],
+  "epistemic_policy": {
+    "claim_is_not_evidence": true,
+    "design_is_not_implementation": true,
+    "empirical_result_is_not_universal_proof": true,
+    "implementation_is_not_validation": true,
+    "prediction_is_not_proof": true,
+    "validation_is_not_independent_verification": true
+  },
+  "error_closure": {
+    "closure_is_necessary_not_sufficient": true,
+    "status": "SPECIFIED",
+    "unresolved_critical_error_blocks_execution": true
+  },
+  "evidence": [
+    {
+      "id": "EP56-T01",
+      "observed_status": "PASS",
+      "subject": "Critical-error bypass",
+      "type": "ADVERSARIAL_TEST"
+    },
+    {
+      "id": "EP56-T02",
+      "observed_status": "PASS",
+      "subject": "Partial closure bypass",
+      "type": "ADVERSARIAL_TEST"
+    },
+    {
+      "id": "EP56-T03",
+      "observed_status": "PASS",
+      "subject": "Repair-induced new error",
+      "type": "ADVERSARIAL_TEST"
+    },
+    {
+      "id": "EP56-T04b",
+      "observed_status": "PASS",
+      "subject": "Transitive dependency traversal",
+      "type": "REGRESSION_TEST"
+    }
+  ],
+  "known_limitations": [
+    {
+      "id": "L-001",
+      "statement": "Execution-gate correctness depends on the integrity and completeness of the dependency lineage used by the gate.",
+      "status": "OPEN"
+    }
+  ],
+  "lineage": {
+    "causal_validity": "OPEN",
+    "completeness": "OPEN",
+    "semantic_validity": "OPEN",
+    "structural_integrity": "OPEN"
+  },
+  "manifest": {
+    "canonical_hash": "56424e7d78c81af7a3f521c881bbe8fd0bfb1cd1e956b7d6fcf1925f62e6751b",
+    "canonical_url": null,
+    "name": "AICOS Public Manifest",
+    "release_status": "RELEASE_CANDIDATE",
+    "system": "AICOS",
+    "version": "0.1.0"
+  },
+  "mutation_testing": {
+    "expanded_mutation_score": 1.0,
+    "initial_mutation_score": 0.8,
+    "interpretation": [
+      "Observed result for the defined mutation set.",
+      "Not a proof of implementation correctness."
+    ],
+    "mutation_set_size": 5
+  },
+  "reproducibility": {
+    "deterministic_manifest_serialization": true,
+    "sha256_hash": true,
+    "test_fixture_references": true,
+    "version_locked": true
+  },
+  "verification": {
+    "external": {
+      "status": "NOT_YET_PERFORMED"
+    },
+    "independent_review": {
+      "status": "PENDING_PUBLIC_RELEASE"
+    },
+    "internal": {
+      "status": "PARTIAL"
+    }
+  }
+}
