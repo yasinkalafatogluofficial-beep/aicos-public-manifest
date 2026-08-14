@@ -1,0 +1,22 @@
+{
+  "baseline_sha256": "56424e7d78c81af7a3f521c881bbe8fd0bfb1cd1e956b7d6fcf1925f62e6751b",
+  "tests": {
+    "T21_key_permutation": true,
+    "T22_line_endings": true,
+    "T23_irrelevant_whitespace": true,
+    "T24_semantic_mutation_changes_hash": true,
+    "T25_evidence_mutation_changes_hash": true,
+    "T26_hash_field_excluded": true,
+    "T27_noncanonical_metadata_changes_hash_if_included": false
+  },
+  "interpretation": {
+    "T21": "PASS",
+    "T22": "PASS",
+    "T23": "PASS",
+    "T24": "PASS",
+    "T25": "PASS",
+    "T26": "PASS",
+    "T27": "PASS_IF_METADATA_IS_EXCLUDED_FROM_CANONICAL_SCOPE"
+  },
+  "status": "CANONICALIZATION_TESTS_EXECUTED"
+}
